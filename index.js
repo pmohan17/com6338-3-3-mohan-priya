@@ -14,10 +14,13 @@ function runQuiz() {
     for (i = 0; i < questionsArr.length; i++){
        if(confirm(questionsArr[i].question)===questionsArr[i].answer) {
         correct++
-    } else {}
-    }
+    } else {} 
+    
+}
     var fullQuiz = questionsArr.length
     var score = (correct/fullQuiz) * 100
-    var finalScore = Math.round((score))
-    alert ('Your score is '+ finalScore + '%!') 
-}
+    var finalScore = Math.round(score)
+    alert ('Your score is '+ finalScore + '%') 
+    correct = 0
+    }
+    
